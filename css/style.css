@@ -1,0 +1,176 @@
+:root {
+  --bg-default: #ebebeb;
+  --bg-white: #fff;
+  --bg-dark: #222219;
+
+  --color-gray:  #333;
+  --color-gray-light: #ccc;
+  --color-white:  #fff;
+
+  --font-size: 16px;
+
+  --font-family:'Roboto', sans-serif;
+}
+
+* {
+  transition: all 0.3s;
+}
+
+body {
+  background-color: var(--bg-default);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------ NAVBAR ------ */
+.navbar-menu-burger {
+  display: none;
+}
+
+.navbar {
+  background-color: var(--bg-white);
+  padding: 0.9rem;
+
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li{
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+
+.navbar-menu li.active {
+  color: var(--color-gray-light);
+}
+
+.navbar-menu li:hover{
+  color: var(--color-gray-light);
+}
+
+.navbar-menu i{
+  margin-left: 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.navbar-menu i:hover{
+  color: var(--color-gray-light);
+}
+
+/* ------ HEADER ------ */
+
+.header {
+  background-image: url(../img/plush-design-studio-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  background-color: var(--bg-white);
+  padding: 1.3rem 3rem;
+  font-size: 2.375rem;
+  font-weight: bold;
+}
+
+/* ------ CARD ------ */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 20rem;
+  margin: 1.875rem;
+  background-color: var(--bg-white);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 15px #D3D3D3;
+}
+
+.card:hover .card-header img {
+  transform: scale(1.1);
+}
+
+.card-header img{
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+  padding: 1.6rem;
+  background-color: var(--bg-white);
+}
+
+.card-content h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.card-content h2 {
+  font-weight: 100;
+  font-size: 0.75rem;
+  margin-top: 0.313rem;
+  color: var(--color-gray);
+}
+
+.card-content p {
+  font-size: 0.875rem;
+}
+
+.card-footer {
+  font-size: 0.75rem;
+
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-gray);
+}
+
+.card-footer a{
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+/* ------ FOOTER ------ */
+
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--color-white);
+  text-align: right;
+  padding: 2.375rem 2.375rem 1.75rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+
