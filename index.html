@@ -10,13 +10,20 @@
     rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
     crossorigin="anonymous"
   >
-  <link rel="stylesheet" href="css/style.css">
+  <link 
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="(max-width: 720px)" href="./css/style720.css" />
 </head>
 <body>
   <!-- Menu principal -->
   <nav class="navbar">
     <div class="navbar-title">Stockholm</div>
     <div class="navbar-menu">
+      <div class="navbar-menu-burger" id="navbar-menu-burger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
       <ul>
         <li class="active">Home</li>
         <li>About</li>
@@ -24,19 +31,71 @@
         <li>Blog</li>
         <li>Contact</li>
       </ul>
-      <div>
+      <div class="navbar-menu-search">
         <i class="fa fa-search" aria-hidden="true"></i>
       </div>
     </div>
   </nav>
   <!-- Cabeçalho da página -->
   <header class="header">
-    <div>
-      your favori blog
+    <div class="header-title">
+      Your favorite blog
     </div>
   </header>
   <!-- Conteúdo principal -->
-  <main>
+  <main class="cards">
+    <section class="card">
+      <div class="card-header">
+        <img src="./img/cards.jpg" alt="Cartões">
+      </div>
+      <div class="card-body">
+        <div class="card-content">
+          <div>
+            <h1>5 dicas úteis sobre Minimalismo</h1>
+            <h2>Menos é mais</h2>
+          </div>
+          <p>
+            Quando começava a pintar, tentava capturar cada pequeno objeto em 
+            grande detalhe e encaixá-lo em um quadro que já estava cheio de 
+            outros detalhes. Quando observava as pinturas mais tarde, percebia 
+            que o espectador provavelmente não sabia em que se concentrar 
+            em primeiro lugar. A minha descoberta do minimalismo foi de 
+            grande ajuda para que as minhas obras ganhassem profundidade. 
+            Por isso compartilho essas cinco dicas que podem ajudá-lo também.
+          </p>
+        </div>
+        <div class="card-footer">
+          <div>BY ADMIN</div>
+          <a href="#"><div>1 COMMENT</div></a>
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <img src="./img/cards.jpg" alt="Cartões">
+      </div>
+      <div class="card-body">
+        <div class="card-content">
+          <div>
+            <h1>5 dicas úteis sobre Minimalismo</h1>
+            <h2>Menos é mais</h2>
+          </div>
+          <p>
+            Quando começava a pintar, tentava capturar cada pequeno objeto em 
+            grande detalhe e encaixá-lo em um quadro que já estava cheio de 
+            outros detalhes. Quando observava as pinturas mais tarde, percebia 
+            que o espectador provavelmente não sabia em que se concentrar 
+            em primeiro lugar. A minha descoberta do minimalismo foi de 
+            grande ajuda para que as minhas obras ganhassem profundidade. 
+            Por isso compartilho essas cinco dicas que podem ajudá-lo também.
+          </p>
+        </div>
+        <div class="card-footer">
+          <div>BY ADMIN</div>
+          <a href="#"><div>1 COMMENT</div></a>
+        </div>
+      </div>
+    </section>
     <section class="card">
       <div class="card-header">
         <img src="./img/cards.jpg" alt="Cartões">
@@ -65,8 +124,11 @@
     </section>
   </main>
   <!-- Rodapé da página -->
-  <footer>
-    Contato, 300
+  <footer class="footer">
+    <div>
+      <p>Contact: (XX) XXXXX-XXXX</p>
+      <p>E-mail: contato@email.com</p>
+    </div>
   </footer>
 </body>
 </html>
