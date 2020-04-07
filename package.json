@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Estudo dos conceitos do front-end Ex. blog modulo 01 AceleraDev (Codenation)",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbimaelAndrade/frontend-blog-modulo-01-aceleradev.git"
+  },
+  "keywords": [
+    "aceleradev",
+    "codenation",
+    "react",
+    "html",
+    "css"
+  ],
+  "author": "Abimael Andrade <abimaelc.andrade@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbimaelAndrade/frontend-blog-modulo-01-aceleradev/issues"
+  },
+  "homepage": "https://github.com/AbimaelAndrade/frontend-blog-modulo-01-aceleradev#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

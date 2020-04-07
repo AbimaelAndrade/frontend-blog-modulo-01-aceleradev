@@ -1,0 +1,7 @@
+.navbar-menu-burger {
+  display: block;
+}
+
+.navbar-menu ul, .navbar-menu-search {
+  display: none;
+}
